@@ -1,0 +1,11 @@
+# CodeIgniter 4
+
+# Folder writable
+writable/
+
+# Folder vendor
+vendor/
+
+# Environment-specific files
+.env
+.env.*
