@@ -34,7 +34,11 @@ $routes->get('/login', 'Auth::index');
 $routes->get('/daftar', 'Auth::daftar');
 $routes->post('/home', 'Dashboard\Home::index');
 $routes->get('/users', 'Dashboard\Users::index');
-$routes->get('/users/edit','Dashboard\Users::edit');
+$routes->get('/users/edit', 'Dashboard\Users::edit');
+$routes->get('/pengajuan-tim-ut', 'Dashboard\Area::pengajuan_tim_ut');
+$routes->get('/actual-uat', 'Dashboard\Area::actual_uat');
+$routes->get('/approval', 'Dashboard\Regional::approval');
+$routes->get('/assign-verificator', 'Dashboard\Mgr::assign');
 
 /*
  * --------------------------------------------------------------------

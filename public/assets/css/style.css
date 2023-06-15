@@ -28,3 +28,14 @@
 .card {
     background-color: #D9D9D9;
 }
+
+.h-full {
+    min-height: 720px;
+}
+
+.doc {
+    /* stay on bottom of div */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

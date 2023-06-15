@@ -32,17 +32,17 @@
                     </a>
                     <ul class="dropdown-menu">
                         <!-- Admin Area -->
-                        <?php if (isset($_POST['role'])): ?>
-                            <?php if ($_POST['role'] == '1'): ?>
-                                <li><a class="dropdown-item" href="#">PENGAJUAN TIM UT</a></li>
-                                <li><a class="dropdown-item" href="#">ACTUAL UAT</a></li>
-                            <?php elseif ($_POST['role'] == '2'): ?>
-                                <li><a class="dropdown-item" href="#">APPROVAL</a></li>
-                            <?php elseif ($_POST['role'] == '3'): ?>
-                                <li><a class="dropdown-item" href="#">ASSIGN VERIFCATOR</a></li>
-                            <?php elseif ($_POST['role'] == '5'): ?>
-                                <li><a class="dropdown-item" href="/users">MANAGE ROLE ADMIN</a></li>
-                            <?php endif ?>
+                        <?php if (isset($_POST['role'])) : ?>
+                        <?php if ($_POST['role'] == '1') : ?>
+                        <li><a class="dropdown-item" href="/pengajuan-tim-ut">PENGAJUAN TIM UT</a></li>
+                        <li><a class="dropdown-item" href="/actual-uat">ACTUAL UAT</a></li>
+                        <?php elseif ($_POST['role'] == '2') : ?>
+                        <li><a class="dropdown-item" href="/approval">APPROVAL</a></li>
+                        <?php elseif ($_POST['role'] == '3') : ?>
+                        <li><a class="dropdown-item" href="/assign-verificator">ASSIGN VERIFCATOR</a></li>
+                        <?php elseif ($_POST['role'] == '5') : ?>
+                        <li><a class="dropdown-item" href="/users">MANAGE ROLE ADMIN</a></li>
+                        <?php endif ?>
                         <?php endif ?>
                     </ul>
                 </li>
