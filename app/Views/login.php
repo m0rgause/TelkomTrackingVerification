@@ -29,10 +29,10 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <a href="#" class="btn btn-light btn-block shadow-sm w-100">Login</a>
+                                <a href="/login" class="btn btn-light btn-block shadow-sm w-100">Login</a>
                             </div>
                             <div class="col-md-6">
-                                <a href="#" class="btn btn-light btn-block shadow-sm w-100">Daftar</a>
+                                <a href="/daftar" class="btn btn-light btn-block shadow-sm w-100">Daftar</a>
                             </div>
                         </div>
                     </div>
