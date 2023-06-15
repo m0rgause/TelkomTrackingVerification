@@ -32,7 +32,9 @@ $routes->set404Override();
 $routes->get('/', 'Auth::index');
 $routes->get('/login', 'Auth::index');
 $routes->get('/daftar', 'Auth::daftar');
-$routes->get('/home', 'Dashboard\Home::index');
+$routes->post('/home', 'Dashboard\Home::index');
+$routes->get('/users', 'Dashboard\Users::index');
+$routes->get('/users/edit','Dashboard\Users::edit');
 
 /*
  * --------------------------------------------------------------------

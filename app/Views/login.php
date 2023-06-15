@@ -21,20 +21,32 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <div class="form-group shadow-sm mb-2">
-                            <input type="text" name="" id="" class="form-control" placeholder="Masukkan NIK">
-                        </div>
-                        <div class="form-group shadow-sm mb-2">
-                            <input type="text" name="" id="" class="form-control" placeholder="Masukkan Password">
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <a href="/login" class="btn btn-light btn-block shadow-sm w-100">Login</a>
+                        <form action="/home" method="post">
+                            <div class="form-group shadow-sm mb-2">
+                                <input type="text" name="" id="" class="form-control" placeholder="Masukkan NIK">
                             </div>
-                            <div class="col-md-6">
-                                <a href="/daftar" class="btn btn-light btn-block shadow-sm w-100">Daftar</a>
+                            <div class="form-group shadow-sm mb-2">
+                                <input type="text" name="" id="" class="form-control" placeholder="Masukkan Password">
                             </div>
-                        </div>
+                            <!-- pilih role -->
+                            <div class="form-group shadow-sm mb-2">
+                                <select class="form-select" aria-label="Default select example" id="role" name="role">
+                                    <option value="1">Admin Area</option>
+                                    <option value="2">Admin Regional</option>
+                                    <option value="3">Admin Off/Mgr Telkom</option>
+                                    <option value="4">Admin Verifikator</option>
+                                    <option value="5">Super Admin</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button class="btn btn-light btn-block shadow-sm w-100" type="submit">Login</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="/daftar" class="btn btn-light btn-block shadow-sm w-100">Daftar</a>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

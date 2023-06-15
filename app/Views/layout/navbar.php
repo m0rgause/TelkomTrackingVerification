@@ -31,12 +31,19 @@
                         TRACKING VERIFICATION
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <!-- Admin Area -->
+                        <?php if (isset($_POST['role'])): ?>
+                            <?php if ($_POST['role'] == '1'): ?>
+                                <li><a class="dropdown-item" href="#">PENGAJUAN TIM UT</a></li>
+                                <li><a class="dropdown-item" href="#">ACTUAL UAT</a></li>
+                            <?php elseif ($_POST['role'] == '2'): ?>
+                                <li><a class="dropdown-item" href="#">APPROVAL</a></li>
+                            <?php elseif ($_POST['role'] == '3'): ?>
+                                <li><a class="dropdown-item" href="#">ASSIGN VERIFCATOR</a></li>
+                            <?php elseif ($_POST['role'] == '5'): ?>
+                                <li><a class="dropdown-item" href="/users">MANAGE ROLE ADMIN</a></li>
+                            <?php endif ?>
+                        <?php endif ?>
                     </ul>
                 </li>
             </ul>
@@ -47,7 +54,7 @@
                 <a class="nav-link" href="#">|</a>
                 <a class="nav-link" href="#"><i class="fa fa-user"></i> VIEWER</a>
                 <a class="nav-link" href="#">|</a>
-                <a class="nav-link" href="#"><i class="fa fa-power-off"></i> LOGOUT</a>
+                <a class="nav-link" href="/login"><i class="fa fa-power-off"></i> LOGOUT</a>
             </div>
         </div>
     </div>
