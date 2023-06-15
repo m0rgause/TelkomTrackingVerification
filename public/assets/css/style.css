@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+
+* {
+    font-family: 'Oxygen Mono', monospace;
+}
+
+.b-top {
+    border-top: 4px solid #039B14;
+}
+
+.nav-link {
+    padding: 1.5rem 1.5rem !important;
+}
+
+.nav-link:hover {
+    background-color: #039B14 !important;
+    color: #fff !important;
+}
+
+.navbar {
+    padding: 0px !important;
+}
+
+.bg-green {
+    background-color: #039B14 !important;
+}
+
+.card {
+    background-color: #D9D9D9;
+}
